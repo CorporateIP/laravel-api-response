@@ -43,7 +43,7 @@ function getUser($id){
 
 ## Installation
 To install you can use Composer, use the following command to install this package. <br/>
-`` composer require firebit/laravel-api-response``
+`` composer require corporateip/laravel-api-response``
 
 ## Documentation
 Coming soon!
