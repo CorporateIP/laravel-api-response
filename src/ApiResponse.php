@@ -45,7 +45,7 @@ class ApiResponse extends Response
         // Create an empty response
         $response = null;
 
-        if (method_exists($this->data, '__toString') || is_scalar($this->data)) {
+        if ((is_object($this->data) && method_exists($this->data, '__toString')) || is_scalar($this->data)) {
             $response_data = $this->data;
         } else {
             $response_data = json_encode($this->data);
