@@ -120,6 +120,7 @@ class ApiResponse extends Response
     public static function create($content = '', int $status = 200, array $headers = [])
     {
         $response = new ApiResponse($content, $status, $headers);
+        $response->setStatusCode($status);
         $response->data = $content;
 
         return $response;
